@@ -1,0 +1,85 @@
+<div class="container-fluid">
+  <table style="border-collapse: collapse; width: 100%">
+    <thead>
+      <tr>
+        _id
+      </tr>
+      <tr>
+        VIN (1-10)
+      </tr>
+      <tr>
+        County
+      </tr>
+      <tr>
+        City
+      </tr>
+      <tr>
+        State
+      </tr>
+      <tr>
+        Postal Code
+      </tr>
+      <tr>
+        Model Year
+      </tr>
+      <tr>
+        Make
+      </tr>
+      <tr>
+        Model
+      </tr>
+      <tr>
+        ElectricVehicleType
+      </tr>
+      <tr>
+        CleanAlternativeFuelVehicle
+      </tr>
+      <tr>
+        ElectricRange
+      </tr>
+      <tr>
+        BaseMSRP
+      </tr>
+      <tr>
+        LegislativeDistrict
+      </tr>
+      <tr>
+        DOLVehicleID
+      </tr>
+      <tr>
+        VehicleLocation
+      </tr>
+      <tr>
+        ElectricUtility
+      </tr>
+      <tr>
+        CensusTract
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of rawData">
+        <div>
+          {{car|json}}
+        </div>
+        <!-- <td>{{ car._id }}</td>
+        <td>{{ car.VIN(1 - 10) }}</td>
+        <td>{{ car.County }}</td>
+        <td>{{ car.City }}</td>
+        <td>{{ car.State }}</td>
+        <td>{{ car.Postal Code }}</td>
+        <td>{{ car.Model Year }}</td>
+        <td>{{ car.Make }}</td>
+        <td>{{ car.Model }}</td>
+        <td>{{ car.ElectricVehicleType }}</td>
+        <td>{{ car.CleanAlternativeFuelVehicle }}</td>
+        <td>{{ car.ElectricRange }}</td>
+        <td>{{ car.BaseMSRP }}</td>
+        <td>{{ car.LegislativeDistrict }}</td>
+        <td>{{ car.DOLVehicleID }}</td>
+        <td>{{ car.VehicleLocation }}</td>
+        <td>{{ car.ElectricUtility }}</td>
+        <td>{{ car.CensusTract }}</td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
